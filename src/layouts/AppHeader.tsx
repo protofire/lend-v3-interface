@@ -21,7 +21,6 @@ import { useRootStore } from 'src/store/root';
 import { ENABLE_TESTNET } from 'src/utils/marketsAndNetworksConfig';
 
 import { Link } from '../components/primitives/Link';
-import { uiConfig } from '../uiConfig';
 import { NavItems } from './components/NavItems';
 import { MobileMenu } from './MobileMenu';
 import { SettingsMenu } from './SettingsMenu';
@@ -187,7 +186,7 @@ export function AppHeader() {
           }}
           onClick={() => setMobileMenuOpen(false)}
         >
-          <img src={uiConfig.appLogo} alt="AAVE" width={72} height={20} />
+          <img src="/lend-192.png" alt="Lend" height={32} />
         </Box>
         <Box sx={{ mr: sm ? 1 : 3 }}>
           {ENABLE_TESTNET && (

@@ -9,7 +9,7 @@ import { useModalContext } from 'src/hooks/useModal';
 import { useRootStore } from 'src/store/root';
 import { DASHBOARD, GENERAL } from 'src/utils/mixPanelEvents';
 
-import LightningBoltGradient from '/public/lightningBoltGradient.svg';
+import LendLogoGradient from '/public/lend-logo-gradient.png';
 
 import { Link } from '../../components/primitives/Link';
 import { Row } from '../../components/primitives/Row';
@@ -96,15 +96,23 @@ export const DashboardEModeButton = ({ userEmodeCategoryId }: DashboardEModeButt
             borderRadius: '4px',
           })}
         >
-          <SvgIcon
-            sx={{
-              fontSize: iconButtonSize,
-              mr: '4px',
-              color: isEModeDisabled ? 'text.muted' : 'text.primary',
-            }}
-          >
-            {isEModeDisabled ? <LightningBoltIcon /> : <LightningBoltGradient />}
-          </SvgIcon>
+          {isEModeDisabled ? (
+            <SvgIcon
+              sx={{
+                fontSize: iconButtonSize,
+                mr: '4px',
+                color: 'text.muted',
+              }}
+            >
+              <LightningBoltIcon />
+            </SvgIcon>
+          ) : (
+            <img
+              src={LendLogoGradient.src}
+              alt=""
+              style={{ width: '12px', height: '12px', marginRight: '4px' }}
+            />
+          )}
 
           {isEModeDisabled ? (
             <Typography variant="buttonS" color="text.secondary">
@@ -157,14 +165,11 @@ export const DashboardEModeButton = ({ userEmodeCategoryId }: DashboardEModeButt
                 <Row
                   caption={
                     <Box sx={{ display: 'inline-flex', alignItems: 'center' }}>
-                      <SvgIcon
-                        sx={{
-                          fontSize: iconButtonSize,
-                          mr: 1,
-                        }}
-                      >
-                        <LightningBoltGradient />
-                      </SvgIcon>
+                      <img
+                        src={LendLogoGradient.src}
+                        alt=""
+                        style={{ width: '12px', height: '12px', marginRight: '4px' }}
+                      />
                       <Typography variant="subheader2" color="text.primary">
                         <EModeLabelMessage />
                       </Typography>

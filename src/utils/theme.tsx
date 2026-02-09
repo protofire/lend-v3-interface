@@ -137,8 +137,8 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
       primary: {
         main: getColor('#383D51', '#EAEBEF'),
         light: getColor('#62677B', '#F1F1F3'),
-        dark: getColor('#292E41', '#D2D4DC'),
-        contrast: getColor('#FFFFFF', '#0F121D'),
+        dark: getColor('#292E41', '#1a2340'),
+        contrast: getColor('#FFFFFF', '#0d1428'),
       },
       secondary: {
         main: getColor('#FF607B', '#F48FB1'),
@@ -181,11 +181,11 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
         highlight: getColor('#383D51', '#C9B3F9'),
       },
       background: {
-        default: getColor('#F1F1F3', '#1B2030'),
-        paper: getColor('#FFFFFF', '#292E41'),
-        surface: getColor('#F7F7F9', '#383D51'),
-        surface2: getColor('#F9F9FB', '#383D51'),
-        header: getColor('#2B2D3C', '#1B2030'),
+        default: getColor('#0d1428', '#0d1428'),
+        paper: getColor('#FFFFFF', '#141b35'),
+        surface: getColor('#F7F7F9', '#1a2340'),
+        surface2: getColor('#F9F9FB', '#1a2340'),
+        header: getColor('#0d1428', '#0d1428'),
         disabled: getColor('#EAEBEF', '#EBEBEF14'),
       },
       divider: getColor('#EAEBEF', '#EBEBEF14'),
@@ -436,7 +436,7 @@ export function getThemedComponents(theme: Theme) {
               color: theme.palette.common.white,
               border: '1px solid',
               borderColor: '#EBEBED1F',
-              backgroundColor: '#383D51',
+              backgroundColor: theme.palette.mode === 'dark' ? '#1a2340' : '#383D51',
               '&:hover, &.Mui-focusVisible': {
                 backgroundColor: theme.palette.background.header,
               },

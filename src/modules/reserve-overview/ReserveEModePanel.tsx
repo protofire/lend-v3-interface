@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro';
-import { Box, SvgIcon, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { LiquidationPenaltyTooltip } from 'src/components/infoTooltips/LiquidationPenaltyTooltip';
 import { LiquidationThresholdTooltip } from 'src/components/infoTooltips/LiquidationThresholdTooltip';
 import { MaxLTVTooltip } from 'src/components/infoTooltips/MaxLTVTooltip';
@@ -11,7 +11,7 @@ import { ComputedReserveData } from 'src/hooks/app-data-provider/useAppDataProvi
 import { useRootStore } from 'src/store/root';
 import { GENERAL, RESERVE_DETAILS } from 'src/utils/mixPanelEvents';
 
-import LightningBoltGradient from '/public/lightningBoltGradient.svg';
+import LendLogoGradient from '/public/lend-logo-gradient.png';
 
 import { PanelRow, PanelTitle } from './ReservePanels';
 
@@ -30,9 +30,11 @@ export const ReserveEModePanel: React.FC<ReserverEModePanelProps> = ({ reserve }
           <Typography variant="secondary14" color="text.secondary">
             <Trans>E-Mode Category</Trans>
           </Typography>
-          <SvgIcon sx={{ fontSize: '14px', mr: 0.5, ml: 2 }}>
-            <LightningBoltGradient />
-          </SvgIcon>
+          <img
+            src={LendLogoGradient.src}
+            alt=""
+            style={{ width: '14px', height: '14px', marginLeft: '8px', marginRight: '4px' }}
+          />
           <Typography variant="subheader1">{getEmodeMessage(reserve.eModeLabel)}</Typography>
         </Box>
         <Box

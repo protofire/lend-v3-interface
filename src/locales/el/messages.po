@@ -2879,7 +2879,7 @@ msgid "With a voting power of <0/>"
 msgstr "Με δύναμη ψήφου <0/>"
 
 #: src/modules/faucet/FaucetTopPanel.tsx
-msgid "With testnet Faucet you can get free assets to test the Aave Protocol. Make sure to switch your wallet provider to the appropriate testnet network, select desired asset, and click ‘Faucet’ to get tokens transferred to your wallet. The assets on a testnet are not “real,” meaning they have no monetary value. <0>Learn more</0>"
+msgid "With testnet Faucet you can get free assets to test the Protocol. Make sure to switch your wallet provider to the appropriate testnet network, select desired asset, and click ‘Faucet’ to get tokens transferred to your wallet. The assets on a testnet are not “real,” meaning they have no monetary value. <0>Learn more</0>"
 msgstr ""
 
 #: src/components/transactions/Withdraw/WithdrawAndSwitchModalContent.tsx

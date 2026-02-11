@@ -2878,7 +2878,7 @@ msgid "With a voting power of <0/>"
 msgstr "Avec un pouvoir de vote de <0/>"
 
 #: src/modules/faucet/FaucetTopPanel.tsx
-msgid "With testnet Faucet you can get free assets to test the Aave Protocol. Make sure to switch your wallet provider to the appropriate testnet network, select desired asset, and click ‘Faucet’ to get tokens transferred to your wallet. The assets on a testnet are not “real,” meaning they have no monetary value. <0>Learn more</0>"
+msgid "With testnet Faucet you can get free assets to test the Protocol. Make sure to switch your wallet provider to the appropriate testnet network, select desired asset, and click ‘Faucet’ to get tokens transferred to your wallet. The assets on a testnet are not “real,” meaning they have no monetary value. <0>Learn more</0>"
 msgstr "Avec testnet Faucet, vous pouvez obtenir des ressources gratuites pour tester le protocole Aave. Assurez-vous de changer votre fournisseur de portefeuille pour le réseau de test approprié, sélectionnez l’actif souhaité et cliquez sur « Faucet » pour obtenir des jetons transférés vers votre portefeuille. Les actifs d’un réseau de test ne sont pas « réels », ce qui signifie qu’ils n’ont aucune valeur monétaire. <0>Pour en savoir plus</0>"
 
 #: src/components/transactions/Withdraw/WithdrawAndSwitchModalContent.tsx

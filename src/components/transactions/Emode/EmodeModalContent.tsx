@@ -17,7 +17,7 @@ import { useProtocolDataContext } from 'src/hooks/useProtocolDataContext';
 import { useWeb3Context } from 'src/libs/hooks/useWeb3Context';
 import { getNetworkConfig } from 'src/utils/marketsAndNetworksConfig';
 
-import LightningBoltGradient from '/public/lightningBoltGradient.svg';
+import LendLogoGradient from '/public/lend-logo-gradient.png';
 
 import { TxErrorView } from '../FlowCommons/Error';
 import { GasEstimationError } from '../FlowCommons/GasEstimationError';
@@ -232,9 +232,11 @@ export const EmodeModalContent = ({ mode }: EmodeModalContentProps) => {
               <Box sx={{ display: 'inline-flex', alignItems: 'center', mx: 1 }}>
                 {user.userEmodeCategoryId !== 0 ? (
                   <>
-                    <SvgIcon sx={{ fontSize: '12px' }}>
-                      <LightningBoltGradient />
-                    </SvgIcon>
+                    <img
+                      src={LendLogoGradient.src}
+                      alt=""
+                      style={{ width: '12px', height: '12px', marginRight: '4px' }}
+                    />
                     <Typography variant="subheader1">
                       {getEmodeMessage(eModes[user.userEmodeCategoryId].label)}
                     </Typography>
@@ -251,9 +253,11 @@ export const EmodeModalContent = ({ mode }: EmodeModalContentProps) => {
                   <Box sx={{ display: 'inline-flex', alignItems: 'center' }}>
                     {selectedEmode.id !== 0 ? (
                       <>
-                        <SvgIcon sx={{ fontSize: '12px', mr: 0.5 }}>
-                          <LightningBoltGradient />
-                        </SvgIcon>
+                        <img
+                          src={LendLogoGradient.src}
+                          alt=""
+                          style={{ width: '12px', height: '12px', marginRight: '4px' }}
+                        />
                         <Typography variant="subheader1">
                           {getEmodeMessage(eModes[selectedEmode.id].label)}
                         </Typography>

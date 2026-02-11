@@ -7,7 +7,7 @@ import { NAV_BAR } from 'src/utils/mixPanelEvents';
 import { Link } from '../../components/primitives/Link';
 import { useProtocolDataContext } from '../../hooks/useProtocolDataContext';
 import { navigation } from '../../ui-config/menu-items';
-import { MoreMenu } from '../MoreMenu';
+// import { MoreMenu } from '../MoreMenu'; // Hidden for Harmony-only interface
 
 interface NavItemsProps {
   setOpen?: (value: boolean) => void;
@@ -93,9 +93,10 @@ export const NavItems = ({ setOpen }: NavItemsProps) => {
           </ListItem>
         ))}
 
-      <ListItem sx={{ display: { xs: 'none', md: 'flex' }, width: 'unset' }} disablePadding>
+      {/* More menu hidden for Harmony-only interface */}
+      {/* <ListItem sx={{ display: { xs: 'none', md: 'flex' }, width: 'unset' }} disablePadding>
         <MoreMenu />
-      </ListItem>
+      </ListItem> */}
     </List>
   );
 };

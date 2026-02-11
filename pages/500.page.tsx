@@ -1,6 +1,6 @@
 import { DuplicateIcon, RefreshIcon } from '@heroicons/react/outline';
 import { Trans } from '@lingui/macro';
-import { Box, Button, Link, Paper, SvgIcon, Typography, useTheme } from '@mui/material';
+import { Box, Button, Paper, SvgIcon, Typography, useTheme } from '@mui/material';
 import { useEffect } from 'react';
 import { ContentContainer } from 'src/components/ContentContainer';
 import { TopInfoPanel } from 'src/components/TopInfoPanel/TopInfoPanel';
@@ -65,7 +65,7 @@ export default function Aave500Page() {
             flexDirection="column"
             mt={10}
           >
-            <Typography sx={{ mb: 4 }}>
+            {/* <Typography sx={{ mb: 4 }}>
               <Trans>
                 If the error continues to happen,
                 <br /> you may report it to this
@@ -74,7 +74,7 @@ export default function Aave500Page() {
                 <Trans>Discord channel</Trans>
               </Link>
               .
-            </Typography>
+            </Typography> */}
             <Button
               color="primary"
               startIcon={

@@ -1,16 +1,21 @@
-import { blo } from 'blo';
-import { utils } from 'ethers';
-import { useEffect, useState } from 'react';
-import { getENSProvider } from 'src/utils/marketsAndNetworksConfig';
-
-const mainnetProvider = getENSProvider();
+// ENS imports disabled
+// import { blo } from 'blo';
+// import { utils } from 'ethers';
+// import { useEffect, useState } from 'react';
+// import { getENSProvider } from 'src/utils/marketsAndNetworksConfig';
+// const mainnetProvider = getENSProvider();
 
 interface EnsResponse {
   name?: string;
   avatar?: string;
 }
 
-const useGetEns = (address: string): EnsResponse => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const useGetEns = (_address: string): EnsResponse => {
+  // ENS disabled for Harmony-only interface (ENS only works on Ethereum mainnet)
+  return { name: undefined, avatar: undefined };
+
+  /* ENS lookup logic disabled
   const [ensName, setEnsName] = useState<string | undefined>(undefined);
   const [ensAvatar, setEnsAvatar] = useState<string | undefined>(undefined);
   const getName = async (address: string) => {
@@ -54,6 +59,7 @@ const useGetEns = (address: string): EnsResponse => {
   }, [ensName]);
 
   return { name: ensName, avatar: ensAvatar };
+  */
 };
 
 export default useGetEns;

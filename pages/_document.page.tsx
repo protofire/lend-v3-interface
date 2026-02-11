@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta name="theme-color" content="#1B2030" />
-          <link rel="shortcut icon" href="/favicon.ico" />
+          <link rel="shortcut icon" href="/lend-192.png" />
           <link rel="manifest" href="/manifest.json" />
           {
             // Inject MUI styles first to match with the prepend: true configuration.

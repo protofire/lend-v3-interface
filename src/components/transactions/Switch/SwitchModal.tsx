@@ -19,7 +19,7 @@ export interface ReserveWithBalance extends ReserveDataHumanized {
   iconSymbol: string;
 }
 
-const defaultNetwork = marketsData[CustomMarket.proto_mainnet_v3];
+const defaultNetwork = marketsData[CustomMarket.proto_harmony_testnet_v3];
 
 export const SwitchModal = () => {
   const {

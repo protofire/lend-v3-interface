@@ -3,16 +3,16 @@ import { Trans } from '@lingui/macro';
 import { Box, Button, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { Link, ROUTES } from 'src/components/primitives/Link';
 import { useRootStore } from 'src/store/root';
-import { CustomMarket, marketsData } from 'src/ui-config/marketsConfig';
+// import { CustomMarket, marketsData } from 'src/ui-config/marketsConfig';
 
 export const GhoDiscountProgram = () => {
   const { breakpoints } = useTheme();
   const downToXsm = useMediaQuery(breakpoints.down('xsm'));
   const currentMarket = useRootStore((store) => store.currentMarket);
 
-  const ghoTokenAddress = marketsData[
-    CustomMarket.proto_mainnet_v3
-  ].addresses.GHO_TOKEN_ADDRESS?.toLowerCase() as string;
+  // const ghoTokenAddress = marketsData[
+  //   CustomMarket.proto_mainnet_v3
+  // ].addresses.GHO_TOKEN_ADDRESS?.toLowerCase() as string;
 
   return (
     <Box
@@ -48,7 +48,7 @@ export const GhoDiscountProgram = () => {
           position: 'relative',
         }}
       >
-        <Box
+        {/* <Box
           component="img"
           src="/illustration_token.png"
           sx={{
@@ -67,7 +67,7 @@ export const GhoDiscountProgram = () => {
           width={220}
           height={220}
           alt="gho coin"
-        />
+        /> */}
         <Box display="flex" flexDirection="column" alignItems={['flex-start', 'center']} gap={3}>
           <Typography
             variant="subheader1"
@@ -84,7 +84,7 @@ export const GhoDiscountProgram = () => {
           <Button
             variant="contained"
             component={Link}
-            href={ROUTES.reserveOverview(ghoTokenAddress, currentMarket)}
+            href={ROUTES.reserveOverview('', currentMarket)}
             size={downToXsm ? 'medium' : 'small'}
             sx={{
               alignItems: 'center',
@@ -98,7 +98,7 @@ export const GhoDiscountProgram = () => {
         </Box>
         <Box
           component="img"
-          src="/illustration_friendly_ghost.png"
+          src="/lend-logo-gradient.png"
           sx={{
             position: 'absolute',
             right: [-200, -190],

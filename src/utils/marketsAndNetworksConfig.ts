@@ -22,8 +22,9 @@ export type Pool = {
 
 export const STAGING_ENV = process.env.NEXT_PUBLIC_ENV === 'staging';
 export const PROD_ENV = !process.env.NEXT_PUBLIC_ENV || process.env.NEXT_PUBLIC_ENV === 'prod';
+// Testnet mode enabled by default
 export const ENABLE_TESTNET =
-  PROD_ENV && global?.window?.localStorage.getItem('testnetsEnabled') === 'true';
+  STAGING_ENV || global?.window?.localStorage.getItem('testnetsEnabled') !== 'false';
 
 // determines if forks should be shown
 export const FORK_ENABLED =

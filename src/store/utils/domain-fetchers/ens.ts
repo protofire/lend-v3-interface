@@ -1,9 +1,10 @@
-import { DomainType, WalletDomain } from 'src/store/walletDomains';
-import { getENSProvider } from 'src/utils/marketsAndNetworksConfig';
-import { tFetch } from 'src/utils/tFetch';
+import { WalletDomain } from 'src/store/walletDomains';
+// ENS imports disabled
+// import { getENSProvider } from 'src/utils/marketsAndNetworksConfig';
+// import { tFetch } from 'src/utils/tFetch';
+// const mainnetProvider = getENSProvider();
 
-const mainnetProvider = getENSProvider();
-
+/* ENS functions disabled
 const getEnsName = async (address: string): Promise<string | null> => {
   try {
     const name = await mainnetProvider.lookupAddress(address);
@@ -23,10 +24,17 @@ const getEnsAvatar = async (name: string): Promise<string | undefined> => {
     console.error('ENS avatar lookup error', error);
   }
 };
+*/
 
-export const getEnsDomain = async (address: string): Promise<WalletDomain | null> => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getEnsDomain = async (_address: string): Promise<WalletDomain | null> => {
+  // ENS disabled for Harmony-only interface
+  return null;
+
+  /* ENS lookup disabled
   const name = await getEnsName(address);
   if (!name) return null;
   const avatar = await getEnsAvatar(name);
   return { name, avatar, type: DomainType.ENS };
+  */
 };

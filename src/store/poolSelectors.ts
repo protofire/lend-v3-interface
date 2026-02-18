@@ -137,6 +137,7 @@ export const selectFormattedReserves = (state: RootStore, currentTimestamp: numb
       isWrappedBaseAsset:
         r.symbol.toLowerCase() === currentNetworkConfig.wrappedBaseAssetSymbol?.toLowerCase(),
     }))
+    .filter((r) => r.symbol !== 'AAVE')
     .sort(reserveSortFn);
 
   return formattedPoolReserves;

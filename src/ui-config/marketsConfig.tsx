@@ -89,7 +89,7 @@ export const marketsData: {
     enabledFeatures: {
       incentives: false,
     },
-    subgraphUrl: 'https://graph.swap.w3us.site/subgraphs/name/lend/harmony-testnet-v3',
+    subgraphUrl: 'https://graph.swap.w3us.site/subgraphs/name/lend/harmony-testnet-v3-new',
     addresses: {
       LENDING_POOL_ADDRESS_PROVIDER: '0x0DCD65B6bC456022feDb9Bd084e7b0FEb0d45404',
       LENDING_POOL: '0x61007e991f95bdC9cf2908b168a289dA486112AF',

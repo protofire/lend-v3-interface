@@ -95,6 +95,6 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
       name: 'Harmony Bridge',
       url: 'https://bridge.harmony.one',
     },
-    ratesHistoryApiUrl: 'https://aave-api-v2.aave.com/data/rates-history',
+    ratesHistoryApiUrl: 'https://lend-api.stg.w3us.site/data/rates-history',
   },
 } as const;

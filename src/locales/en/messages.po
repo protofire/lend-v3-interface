@@ -39,10 +39,6 @@ msgstr "<0><1><2/></1>Add stkAAVE</0> to see borrow rate with discount"
 msgid "<0>Ampleforth</0> is a rebasing asset. Visit the <1>documentation</1> to learn more."
 msgstr "<0>Ampleforth</0> is a rebasing asset. Visit the <1>documentation</1> to learn more."
 
-#: src/components/transactions/Borrow/ParameterChangewarning.tsx
-msgid "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation. Follow the <1>Aave governance forum</1> for updates."
-msgstr "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation. Follow the <1>Aave governance forum</1> for updates."
-
 #: src/modules/dashboard/lists/SlippageList.tsx
 msgid "<0>Slippage tolerance </0><1>{selectedSlippage}% </1><2>{0}</2>"
 msgstr "<0>Slippage tolerance </0><1>{selectedSlippage}% </1><2>{0}</2>"
@@ -246,10 +242,6 @@ msgstr "An error has occurred fetching the proposal metadata from IPFS."
 #: src/components/transactions/TxActionsWrapper.tsx
 msgid "Approve Confirmed"
 msgstr "Approve Confirmed"
-
-#: src/components/transactions/FlowCommons/RightHelperText.tsx
-msgid "Approve with"
-msgstr "Approve with"
 
 #: src/components/transactions/TxActionsWrapper.tsx
 msgid "Approve {symbol} to continue"

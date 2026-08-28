@@ -66,7 +66,7 @@ jobs:
           PINATA_HASH: '${{ inputs.PINATA_HASH }}'
 
       - name: crust
-        uses: crustio/ipfs-crust-action@18f5ab4e8496351cfaca10a55ced7119cb0fe677 # v2.0.6
+        uses: crustio/ipfs-crust-action@9380b1dea34d258dc1b8d0b3e4c187d89131bd64 # v2.0.8
         continue-on-error: true
         timeout-minutes: 3
         with:
